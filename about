@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About</title> 
+    <link media='screen' href='/bootstrap/css/bootstrap.min.css' rel='stylesheet' /> 
+    <link media='screen' href='/stylesheets/main.css' rel='stylesheet' /> 
+  <style type="text/css">
+  </style>
+  
+  
+  <link href="../public/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+  <body>
+    <div class='container page'>
+	<div class="navbar">    
+	<div class="navbar-inner"> 
+		
+		          <a class="brand" href="/">          <img src="http://i.imgur.com/rlgYB5A.png" height="20" width="160" />  </a>
+		<ul class="nav"> 
+			
+			            
+			<li> 
+				
+				              <a href="">About</a>            </li> 
+			
+			            
+			<li>              <a href="contact.html">Contact</a>            </li> 
+			
+			  
+			<li>              <a href="">ImageGallery</a>            </li> 
+			<li>              <a href="howto.html">วิธีการใช้งาน</a>            </li> 
+			
+			
+			            {% if not user %} 
+			
+			              
+			<li>                <a href="{{ login_url }}">Login</a>              </li>            {% else %}
+              
+			<li> 
+				
+				                <a href="/">                  {{ user.nickname }}                </a>              </li>              
+			<li> 
+				
+				                <a href="{{ logout_url }}">Logout<br />
+					</a>              </li>            {% endif %}
+          
+		</ul>  
+        </div>      </div></div>
+<div class='container page'>
+<div class="row-fluid"> 
+  	        
+	<div class="row"> 
+	<div class="hero-unit">
+	<img src="http://i.imgur.com/8o8qmUo.jpg">
+		<p><h3><span style="color: rgb(227, 1, 237);"><span lang="TH">ศูนย์กลางการซื้อขายสินค้าออนไลน์ภายในมหาวิทยาลัยสงขลานครินทร์<br />
+				</span></span><span style="color: rgb(227, 1, 237);"><span lang="TH">????????? ???????????????????????? ???????????????</span></span></h3>
+	<p><span lang="TH"></span></p></p>
+<p><span lang="TH" style="font-size:16.0pt;line-height: 115%;font-family:"Angsana New","serif";mso-fareast-font-family:Calibri; mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:TH">??????????????????????????????????????????????????????????????????????????????????  ??????????????????????????????????????????????????????????????????????????????????????????????????????? ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????? ????????????????????????????????????????????????????????????&nbsp;</span>&nbsp;</p>
+<p><br />
+	</div>        
+	<ul class="thumbnails">
+  <li class="span4">
+    <div class="thumbnail">
+      <center><h1><img src="http://i.imgur.com/PthWXK8.jpg" alt="" border="0" style="margin: 0px; width: 140px; height: 180px; border: 7px solid rgb(255, 255, 255); -webkit-box-shadow: rgba(0, 0, 0, 0.498039) 0px 15px 10px -10px, rgba(0, 0, 0, 0.298039) 0px 1px 4px; box-shadow: rgba(0, 0, 0, 0.498039) 0px 15px 10px -10px, rgba(0, 0, 0, 0.298039) 0px 1px 4px;" /></h1></center>
+            <center><h5><span style="font-size: 14pt;"><span lang="TH">นางสาวธันยา  ช่วยประดิษฐ์</span></span></h5>
+<p><h5><span lang="TH">รหัสนักศึกษา 5210513035</span></h5>
+<h5><span lang="TH">สาขาการจัดกาารเทคโนโลยีสารสนเทศ</span></h5>
+<h5><span lang="TH">คณะวิทยาการจัดการ</span></h5>
+<h5><span lang="TH">มหาวิทยาลัยสงขลานครินทร์</span></h5>
+<h5>E-mail : ploykabenz@gmail.com</h5></p></center>
+    </div>
+  </li>
+  <li class="span4">
+    <div class="thumbnail">
+      <center><h1><img src="http://i.imgur.com/wKOymIA.jpg" alt="" border="0" style="margin: 0px; width: 130px; height: 180px; border: 7px solid rgb(255, 255, 255); -webkit-box-shadow: rgba(0, 0, 0, 0.498039) 0px 15px 10px -10px, rgba(0, 0, 0, 0.298039) 0px 1px 4px; box-shadow: rgba(0, 0, 0, 0.498039) 0px 15px 10px -10px, rgba(0, 0, 0, 0.298039) 0px 1px 4px;" /></h1></center>
+      <center><h5><span style="font-size: 14pt;"><span lang="TH">นางสาวภาวินี  จันทร์พุ่ม</span></span></h5>
+<p><h5><span lang="TH">รหัสนักศึกษา 5210513056</span></h5>
+<h5><span lang="TH">สาขาการจัดกาารเทคโนโลยีสารสนเทศ</span></h5>
+<h5><span lang="TH">คณะวิทยาการจัดการ</span></h5>
+<h5><span lang="TH">มหาวิทยาลัยสงขลานครินทร์</span></h5>
+<h5>E-mail : pawinee336@gmail.com</h5></p></center>
+    </div>
+  </li>
+  <li class="span4">
+    <div class="thumbnail">
+      <center><h1><img src="http://i.imgur.com/e2iAHcT.jpg" alt="" border="0" style="margin: 0px; width: 130px; height: 180px; border: 7px solid rgb(255, 255, 255); -webkit-box-shadow: rgba(0, 0, 0, 0.498039) 0px 15px 10px -10px, rgba(0, 0, 0, 0.298039) 0px 1px 4px; box-shadow: rgba(0, 0, 0, 0.498039) 0px 15px 10px -10px, rgba(0, 0, 0, 0.298039) 0px 1px 4px;" /></h1></center>
+      
+      <center><h5><span style="font-size: 14pt;"><span lang="TH">นางสาวสาลิณี  หลังหลำ</span></span></h5>
+<p><h5><span lang="TH">รหัสนักศึกษา 5210513086</span></h5>
+<h5><span lang="TH">สาขาการจัดกาารเทคโนโลยีสารสนเทศ</span></h5>
+<h5><span lang="TH">คณะวิทยาการจัดการ</span></h5>
+<h5><span lang="TH">มหาวิทยาลัยสงขลานครินทร์</span></h5>
+<h5>E-mail : eyesalinee@gmail.com</h5></p></center>
+    </div>
+  </li>
+  
+</ul>
+</div></div></div>
