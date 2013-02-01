@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About</title> 
+    <link media='screen' href='/bootstrap/css/bootstrap.min.css' rel='stylesheet' /> 
+    <link media='screen' href='/stylesheets/main.css' rel='stylesheet' /> 
+  <style type="text/css">
+  </style>
+  
+  
+  <link href="../public/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
+  <body>
+    <div class='container page'>
+	<div class="navbar">   
+	<div class="navbar-inner">
+	<div class="navbar-inverse">
+		
+		          <a class="brand" href="/">          <img src="http://i.imgur.com/ReCvyCh.jpg" height="10" width="110" />  </a>
+		<ul class="nav"> 
+			
+			            
+			<li> 
+				<a href="../images/about.html"><button class="btn-warning " type="button" >เกี่ยวกับเรา</button></a></li> 
+				
+			            
+			<li>              <a href="contact.html"><button class="btn-warning " type="button">ติดต่อเรา</button> </a>           </li> 
+			
+			  
+			<li>              <a href="imageGallery.html"><button class="btn-warning " type="button">สินค้าทั้งหมด</button></a>          </li> 
+			<li>              <a href="howto.html"><button class="btn-warning " type="button">ขั้นตอนการใช้งาน</button> </a>           </li> 
+			
+			
+			            {% if not user %} 
+			
+			              
+			<li>                <a href="{{ login_url }}"><button class="btn-warning " type="button">เข้าสู่ระบบ</button></a> </li>            {% else %}
+              
+			<li> 
+				
+				                <a href="/"> <button class="btn-warning " type="button">{{ user.nickname }}</button></a></li>              
+			<li> 
+				
+				                <a href="{{ logout_url }}"><button class="btn-warning " type="button">ออกจากระบบ</button></a>
+					              </li>            {% endif %}
+          
+		</ul>  
+		</div></div></div></div>
+<div class='container page'>
+<div class="row-fluid"> 
+  		
+	<center><img src="http://i.imgur.com/tOrT8cG.png"></center>
+		
+	</div>       
+	<ul class="thumbnails">
+  <li class="span4">
+    <div class="thumbnail">
+      <center><h1><img src="http://i.imgur.com/PthWXK8.jpg" alt="" border="0" style="margin: 0px; width: 140px; height: 180px; border: 7px solid rgb(255, 255, 255); -webkit-box-shadow: rgba(0, 0, 0, 0.498039) 0px 15px 10px -10px, rgba(0, 0, 0, 0.298039) 0px 1px 4px; box-shadow: rgba(0, 0, 0, 0.498039) 0px 15px 10px -10px, rgba(0, 0, 0, 0.298039) 0px 1px 4px;" /></h1></center>
+            <center><h5><span style="font-size: 14pt;"><span lang="TH">นางสาวธันยา  ช่วยประดิษฐ์</span></span></h5>
+<p><h5><span lang="TH">รหัสนักศึกษา 5210513035</span></h5>
+<h5><span lang="TH">สาขาการจัดกาารเทคโนโลยีสารสนเทศ</span></h5>
+<h5><span lang="TH">คณะวิทยาการจัดการ</span></h5>
+<h5><span lang="TH">มหาวิทยาลัยสงขลานครินทร์</span></h5>
+<h5>E-mail : ploykabenz@gmail.com</h5></p></center>
+    </div>
+  </li>
+  <li class="span4">
+    <div class="thumbnail">
+      <center><h1><img src="http://i.imgur.com/wKOymIA.jpg" alt="" border="0" style="margin: 0px; width: 130px; height: 180px; border: 7px solid rgb(255, 255, 255); -webkit-box-shadow: rgba(0, 0, 0, 0.498039) 0px 15px 10px -10px, rgba(0, 0, 0, 0.298039) 0px 1px 4px; box-shadow: rgba(0, 0, 0, 0.498039) 0px 15px 10px -10px, rgba(0, 0, 0, 0.298039) 0px 1px 4px;" /></h1></center>
+      <center><h5><span style="font-size: 14pt;"><span lang="TH">นางสาวภาวินี  จันทร์พุ่ม</span></span></h5>
+<p><h5><span lang="TH">รหัสนักศึกษา 5210513056</span></h5>
+<h5><span lang="TH">สาขาการจัดกาารเทคโนโลยีสารสนเทศ</span></h5>
+<h5><span lang="TH">คณะวิทยาการจัดการ</span></h5>
+<h5><span lang="TH">มหาวิทยาลัยสงขลานครินทร์</span></h5>
+<h5>E-mail : pawinee336@gmail.com</h5></p></center>
+    </div>
+  </li>
+  <li class="span4">
+    <div class="thumbnail">
+      <center><h1><img src="http://i.imgur.com/e2iAHcT.jpg" alt="" border="0" style="margin: 0px; width: 130px; height: 180px; border: 7px solid rgb(255, 255, 255); -webkit-box-shadow: rgba(0, 0, 0, 0.498039) 0px 15px 10px -10px, rgba(0, 0, 0, 0.298039) 0px 1px 4px; box-shadow: rgba(0, 0, 0, 0.498039) 0px 15px 10px -10px, rgba(0, 0, 0, 0.298039) 0px 1px 4px;" /></h1></center>
+      
+      <center><h5><span style="font-size: 14pt;"><span lang="TH">นางสาวสาลิณี  หลังหลำ</span></span></h5>
+<p><h5><span lang="TH">รหัสนักศึกษา 5210513086</span></h5>
+<h5><span lang="TH">สาขาการจัดกาารเทคโนโลยีสารสนเทศ</span></h5>
+<h5><span lang="TH">คณะวิทยาการจัดการ</span></h5>
+<h5><span lang="TH">มหาวิทยาลัยสงขลานครินทร์</span></h5>
+<h5>E-mail : eyesalinee@gmail.com</h5></p></center>
+    </div>
+  </li>
+
+</ul>
+</div></div>
+
+<div class='container page'>  
+<div id="footer">   
+<center><p><a href="about.html">เกี่ยวกับเรา</a>&nbsp <a href="contact.html">ติดต่อเรา</a>&nbsp <a href="imageGellary.html">สินค้าทั้งหมด</a> &nbsp <a href="howto.html">ขั้นตอนการใช้งาน</a> </p></center>  
+	<center><p class="muted credit">PSU shopping's fanpage <a href="http://www.facebook.com/pages/PSUmarket/233296100124121">PSU shopping</a> </p></center></div>   </div> 
+
+<script src="/javascripts/jquery-1.8.3.min.js">
+//<![CDATA[
+
+//]]>
+</script>    
+<script src="/bootstrap/js/bootstrap.min.js">
+//<![CDATA[
+
+//]]>
+</script>
