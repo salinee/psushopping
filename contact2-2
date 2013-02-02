@@ -1,0 +1,87 @@
+
+ {% extends "base.html" %}
+    
+ {% block content %} 
+  <!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact</title> 
+    <link media='screen' href='/bootstrap/css/bootstrap.min.css' rel='stylesheet' /> 
+    <link media='screen' href='/stylesheets/main.css' rel='stylesheet' /> 
+  <style type="text/css">
+	</style>
+	<style>
+          body { background:url(http://i.imgur.com/9plfY1n.png) repeat-x fixed; }
+          .container { background: white; }
+        </style>
+  
+  
+  <link href="../public/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  </head>
+  
+  <body>
+    <div class='container page'>
+	<div class="navbar">       
+	<div class="navbar-inner">
+	<div class="navbar-inverse">
+		
+		          <a class="brand" href="/">          <img src="http://i.imgur.com/K33NGI8.png" height="10" width="110" />  </a>
+		<ul class="nav"> 
+			
+			            
+			<li> 
+				<a href="../images/about.html"><button class="btn btn-warning " type="button" >เกี่ยวกับเรา</button></a></li> 
+				
+			            
+			<li>              <a href="../images/contact.html"><button class="btn btn-warning " type="button">ติดต่อเรา</button> </a>           </li> 
+			
+			  
+			<li>              <a href="../images/imageGallery.html"><button class="btn btn-warning " type="button">สินค้าทั้งหมด</button></a>          </li> 
+			<li>              <a href="../images/howto.html"><button class="btn btn-warning " type="button">ขั้นตอนการใช้งาน</button> </a>           </li> 
+			
+			
+			            
+		</ul>  
+		
+        </div>      </div></div></div>
+	<div class='container page'>
+	<div class="row-fluid">
+	       
+	<div class="row">
+	
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+	<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+		<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+			<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+				<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+					<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+						<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+							<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+								<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+													
+											
+												<h1>
+													<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+														<h1><img src="http://i.imgur.com/JBs8TF4.png" alt="" border="0" style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;" /></h1></blockquote></h1></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote>
+	<center><p>คุณสามารถติดต่อเราได้ทาง</p></center>
+<center><p>E-mail : psumarketteam@gmail.com </p>
+  <p>&nbsp;</p>
+  </center></div></div></div>
+
+<div class='container page'>  
+<div id="footer">     
+<center><p><a href="about.html">เกี่ยวกับเรา</a>&nbsp <a href="contact.html">ติดต่อเรา</a>&nbsp <a href="imageGellary.html">สินค้าทั้งหมด</a> &nbsp <a href="howto.html">ขั้นตอนการใช้งาน</a> </p></center>  
+	<center><p class="muted credit">PSU shopping's fanpage <a href="http://www.facebook.com/pages/PSUmarket/233296100124121">PSU shopping</a> </p></center></div>   </div> 
+  
+<script src="/javascripts/jquery-1.8.3.min.js">
+//<![CDATA[
+
+//]]>
+</script>    
+<script src="/bootstrap/js/bootstrap.min.js">
+//<![CDATA[
+
+//]]>
+</script>
