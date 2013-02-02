@@ -1,0 +1,78 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <title>PSUshopping</title> 
+    <link media='screen' href='/bootstrap/css/bootstrap.min.css' rel='stylesheet' /> 
+    <link media='screen' href='/stylesheets/main.css' rel='stylesheet' /> 
+  <style type="text/css">
+         
+	</style>
+  <style>
+          body { background:url(http://i.imgur.com/9plfY1n.png) repeat-x fixed; }
+          .container { background: white; }
+        </style>
+  
+  <link href="../public/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class='container page'>
+	<div class="navbar">       
+	<div class="navbar-inner">
+	<div class="navbar-inverse">
+			          <a class="brand" href="/"><img src="http://i.imgur.com/K33NGI8.png" height="10" width="100" />  </a>
+		<ul class="nav"> 
+				            
+			<li><a href="../images/about.html"><button class="btn btn-warning " type="button" >เกี่ยวกับเรา</button></a></li> 
+				
+			            
+			<li><a href="../images/contact.html"><button class="btn btn-warning " type="button">ติดต่อเรา</button> </a></li> 
+			
+			  
+			<li><a href="../images/imageGallery.html"><button class="btn btn-warning " type="button">สินค้าทั้งหมด</button></a></li> 
+			<li><a href="../images/howto.html"><button class="btn btn-warning " type="button">ขั้นตอนการใช้งาน</button> </a></li> 
+			
+			
+			            {% if not user %} 
+			
+			              
+			<li><a href="{{ login_url }}"><button class="btn btn-warning " type="button">เข้าสู่ระบบ</button></a></li>     {% else %}
+              
+			<li><a href="/"><button class="btn btn-warning " type="button">{{ user.nickname }}</button></a></li>             
+			<li><a href="{{ logout_url }}"><button class="btn btn-warning " type="button">ออกจากระบบ</button></a></li>   {% endif %}
+          
+		</ul>  
+		
+        </div>      </div></div>
+<div class="row-fluid"> 
+  	        
+	<div class="row">         
+		
+<center><p><img src="http://i.imgur.com/zuRbCmL.jpg" alt="shop" border="0" style="margin: 0px; width: 700px; height: 500px;" /></p></center>
+										<p>&nbsp;</p></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></br>
+		</div></div>
+		<div class="span12">          
+		{% block content %}
+        {% endblock %}
+        </div> 
+		</div>
+		</div>
+		</div>
+	  
+	
+    <div class='container page'>  
+<div id="footer">     
+<center><p><a href="about.html">เกี่ยวกับเรา</a>&nbsp <a href="contact.html">ติดต่อเรา</a>&nbsp <a href="imageGellary.html">สินค้าทั้งหมด</a> &nbsp <a href="howto.html">ขั้นตอนการใช้งาน</a> </p></center>  
+	<center><p class="muted credit">PSU shopping's fanpage <a href="http://www.facebook.com/pages/PSUmarket/233296100124121">PSU shopping</a> </p></center></div>   </div> </div>
+  
+<script src="/javascripts/jquery-1.8.3.min.js">
+//<![CDATA[
+
+//]]>
+</script>    
+<script src="/bootstrap/js/bootstrap.min.js">
+//<![CDATA[
+
+//]]>
+</script>
