@@ -1,0 +1,132 @@
+
+<!DOCTYPE HTML>
+<!--
+/*
+ * Bootstrap Image Gallery 2.5.1
+ * https://github.com/blueimp/Bootstrap-Image-Gallery
+ *
+ * Copyright 2011, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+-->
+<html lang="en">
+<head>
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+<meta charset="utf-8">
+<title>อัลบั้มสินค้า</title>
+<meta name="description" content="Bootstrap Image Gallery is an extension to the Modal dialog of Twitter's Bootstrap toolkit, to ease navigation between a set of gallery images. It features mouse and keyboard navigation, transition effects, fullscreen mode and slideshow functionality.">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="http://blueimp.github.com/cdn/css/bootstrap.min.css">
+<link rel="stylesheet" href="../bootstrap/css/style.css">
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+<!--[if lt IE 7]><link rel="stylesheet" href="http://blueimp.github.com/cdn/css/bootstrap-ie6.min.css"><![endif]-->
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<link rel="stylesheet" href="../bootstrap/css/bootstrap-image-gallery.min.css">
+<link rel="stylesheet" href="../bootstrap/css/global.css"/>
+<style>
+.pic
+{
+  width:100px;
+	height:100px;
+	margin-right:10px;
+}
+</style>
+
+</head>
+<body>
+<div class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="https://github.com/blueimp/Bootstrap-Image-Gallery">อัลบั้มสินค้า</a>
+            
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <header>
+        <center><h1>สินค้าทั้งหมด</h1></center>
+        <blockquote>
+            <p>ลูกค้าสามารถดูสินค้าทั้งหมดของทาง PSU shopping  ได้จากหน้านี้ และสามารถสั่งซื้อสินค้าได้โดยการ โพสต์รหัสสินค้าไว้ทางหน้าเว็บได้เลยค่ะ</p>
+        </blockquote>
+        <p>
+            <button id="start-slideshow" class="btn btn-large btn-success" data-slideshow="5000" data-target="#modal-gallery" data-selector="#gallery a[rel=gallery]">Start Slideshow</button>
+            <button id="toggle-fullscreen" class="btn btn-large btn-primary" data-toggle="button">Toggle Fullscreen</button>
+        </p>
+    </header>
+	</div>
+	
+   <div id="container">
+		<div id="example">
+			<img src="../bootstrap/img/new-ribbon.png" width="112" height="112" alt="New Ribbon" id="ribbon">
+			<div id="slides">
+				<div class="slides_container">
+					<a href="http://www.flickr.com/photos/92978576@N08/8457478459/in/photostream" title="145.365 - Happy Bokeh Thursday! | Flickr - Photo Sharing!" target="_blank"><img src="../bootstrap/img/2g282.jpg" width="570" height="270" alt="Slide 1"></a>
+					<a href="http://www.flickr.com/photos/92978576@N08/8457478473/in/photostream" title="Taxi | Flickr - Photo Sharing!" target="_blank"><img src="../bootstrap/img/2g292.1.jpg"width="570" height="270" alt="Slide 2"></a>
+					<a href="http://www.flickr.com/photos/92978576@N08/8458518398/in/photostream" title="Happy Bokeh raining Day | Flickr - Photo Sharing!" target="_blank"><img src="../bootstrap/img/2g292.1.jpg" width="570" height="270" alt="Slide 3"></a>
+					<a href="http://www.flickr.com/photos/b-tal/117037943/" title="We Eat Light | Flickr - Photo Sharing!" target="_blank"><img src="http://slidesjs.com/examples/standard/img/slide-4.jpg" width="570" height="270" alt="Slide 4"></a>
+					<a href="http://www.flickr.com/photos/bu7amd/3447416780/" title="“I must go down to the sea again, to the lonely sea and the sky; and all I ask is a tall ship and a star to steer her by.” | Flickr - Photo Sharing!" target="_blank"><img src="http://slidesjs.com/examples/standard/img/slide-5.jpg" width="570" height="270" alt="Slide 5"></a>
+					<a href="http://www.flickr.com/photos/streetpreacher/2078765853/" title="twelve.inch | Flickr - Photo Sharing!" target="_blank"><img src="http://slidesjs.com/examples/standard/img/slide-6.jpg" width="570" height="270" alt="Slide 6"></a>
+					<a href="http://www.flickr.com/photos/aftab/3152515428/" title="Save my love for loneliness | Flickr - Photo Sharing!" target="_blank"><img src="http://slidesjs.com/examples/standard/img/slide-7.jpg" width="570" height="270" alt="Slide 7"></a>
+				</div>
+				<a href="#" class="prev"><img src="../bootstrap/img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+				<a href="#" class="next"><img src="../bootstrap/img/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+			</div>
+			
+		</div>
+   </div>
+<!-- modal-gallery is the modal dialog used for the image gallery -->
+<script>
+  function jsonFlickrApi(rsp) {
+    window.rsp = rsp;
+    var s = "";
+    // http://farm{id}.static.flickr.com/{server-id}/{id}_{secret}_[mstb].jpg
+    // http://www.flickr.com/photos/{user-id}/{photo-id}
+    s = "total number is: " + rsp.photos.photo.length + "<br/>";
+    
+    for (var i=0; i < rsp.photos.photo.length; i++) {
+      photo = rsp.photos.photo[i];
+      t_url = "http://farm" + photo.farm + ".static.flickr.com/" + 
+        photo.server + "/" + photo.id + "_" + photo.secret + "_" + "t.jpg";
+      p_url = "http://www.flickr.com/photos/" + photo.owner + "/" + photo.id;
+      s +=  '<a href="' + p_url + '">' + '<img alt="'+ photo.title + 
+        '"src="' + t_url + '"'+" class='pic' "+'/>' + '</a>';
+    }
+    document.writeln(s);
+  }
+  </script>
+  <script src=" http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=0a6d793cd1787df85b15dd3d8e09ae69&user_id=92978576%40N08&format=json&per_page=50"></script>
+</div>
+ <div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery"></div>
+	<a data-gallery="gallery" href="http://i.imgur.com/rbReyz4.png" title="The sky before dark ..."><img src="http://i.imgur.com/rbReyz4.png"></a>
+    <br>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../bootstrap/js/load-image.min.js"></script>
+<script src="../bootstrap/js/bootstrap-image-gallery.min.js"></script>
+<script src="../bootstrap/js/main.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
+	<script src="../bootstrap/js/slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: '../bootstrap/img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true
+			});
+		});
+	</script>
+	
+</body> 
+</html>
