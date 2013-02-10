@@ -1,0 +1,138 @@
+
+<!DOCTYPE HTML>
+<!--
+/*
+ * Bootstrap Image Gallery 2.5.1
+ * https://github.com/blueimp/Bootstrap-Image-Gallery
+ *
+ * Copyright 2011, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+-->
+<html lang="en">
+<head>
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+<meta charset="utf-8">
+<title>อัลบั้มสินค้า</title>
+<meta name="description" content="Bootstrap Image Gallery is an extension to the Modal dialog of Twitter's Bootstrap toolkit, to ease navigation between a set of gallery images. It features mouse and keyboard navigation, transition effects, fullscreen mode and slideshow functionality.">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="http://blueimp.github.com/cdn/css/bootstrap.min.css">
+<link rel="stylesheet" href="../bootstrap/css/style.css">
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+<!--[if lt IE 7]><link rel="stylesheet" href="http://blueimp.github.com/cdn/css/bootstrap-ie6.min.css"><![endif]-->
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<link rel="stylesheet" href="../bootstrap/css/bootstrap-image-gallery.min.css">
+<link rel="stylesheet" href="../bootstrap/css/global.css"/>
+<style>
+.pic
+{
+  width:100px;
+	height:100px;
+	margin-right:10px;
+}
+           body { background:url(http://i.imgur.com/PyHhqGy.png) repeat-x fixed; }
+          .container { background: white; }
+        
+</style>
+
+</head>
+<body>
+<div class='container page'>
+	<div class="navbar">   
+	<div class="navbar-inner">
+	<div class="navbar-inverse">
+		
+		          <a class="brand" href="/">          <img src="http://i.imgur.com/rbReyz4.png" height="10" width="110" />  </a>
+		<ul class="nav"> 
+			<li><a href="../images/about.html"><button class="btn btn-warning " type="button" >เกี่ยวกับเรา</button></a></li> 
+				
+			            
+			<li><a href="../images/contact.html"><button class="btn btn-warning " type="button">ติดต่อเรา</button> </a></li> 
+			
+			  
+			<li><a href="../images/imageGallery.html"><button class="btn btn-warning " type="button">สินค้าทั้งหมด</button></a></li> 
+			<li><a href="../images/howto.html"><button class="btn btn-warning " type="button">ขั้นตอนการใช้งาน</button> </a></li> 
+			
+			
+			                     
+		</ul>  
+		</div></div></div></div>
+		<div class='container page'>
+    
+        <blockquote>
+            <p>&nbsp;</p>
+            <p>ลูกค้าสามารถดูสินค้าทั้งหมดของทาง PSU shopping  ได้จากหน้านี้ และสามารถสั่งซื้อสินค้าได้โดยการ โพสต์รหัสสินค้าไว้ทางหน้าเว็บได้เลยค่ะ</p>
+        </blockquote>
+        
+    	</div>
+	
+   <div class='container page'>
+   <div id="container">
+		<div id="example"> 
+			<img src="../bootstrap/img/new-ribbon.png" width="112" height="112" alt="New Ribbon" id="ribbon">
+			<div id="slides">
+					<div class="slides_container">
+					<a href="http://www.flickr.com/photos/92978576@N08/8460810184/in/photostream" title="รหัสสินค้า 2L092.1 เดรสสั้นลายเสือ ผ้าลื่น แขนกุดใส่สบาย มี 3 สีค่ะ" target="_blank"><img src="../bootstrap/img/2l092.1.jpg" width="570" height="270" alt="Slide 1"></a>
+					<a href="http://www.flickr.com/photos/92978576@N08/8457478473/in/photostream" title="รหัสสินค้า 2G292.1 จั้มสูธซีฟองเนื้อดี แต่งกระโปรงพริ้ว มี 6 สีค่ะ" target="_blank"><img src="../bootstrap/img/2g292.1.jpg"width="570" height="270" alt="Slide 2"></a>
+					<a href="http://www.flickr.com/photos/92978576@N08/8459023080/in/photostream" title="รหัสสินค้า 2L186.1 เดรสซีฟอง ลายดอก ผ้าพริ้ว มี 4 สีค่ะ" target="_blank"><img src="../bootstrap/img/2l186.1.jpg" width="570" height="270" alt="Slide 3"></a>
+					<a href="http://www.flickr.com/photos/92978576@N08/8457921171/in/photostream" title="รหัสสินค้า 2K154 เสื้อสายเดี่ยว โชว์หลัง ผ้าเนื้อดี มี 6 สีค่ะ" target="_blank"><img src="../bootstrap/img/2k154.jpg" width="570" height="270" alt="Slide 4"></a>
+					<a href="http://www.flickr.com/photos/92978576@N08/8457921283/in/photostream" title="รหัสสินค้า 2K153 เสื้อซีฟอง สายเดี่ยวลายดอก ผ้าพริ้วใส่สบาย มี 6 สีค่ะ" target="_blank"><img src="../bootstrap/img/2k153.jpg" width="570" height="270" alt="Slide 5"></a>
+					<a href="http://www.flickr.com/photos/92978576@N08/8457921173/in/photostream" title="รหัสสินค้า 2K151 เสื้อซีฟองคอบัว แต่งมุกที่แขน มี 5 สีค่ะ" target="_blank"><img src="../bootstrap/img/2k151.jpg" width="570" height="270" alt="Slide 6"></a>
+					<a href="http://www.flickr.com/photos/92978576@N08/8459050480/in/photostream" title="รหัสสินค้า 2L171 เดรสแขนกุด แต่งระบายที่อก มี 4 สีค่ะ" target="_blank"><img src="../bootstrap/img/2l171.jpg" width="570" height="270" alt="Slide 7"></a>
+				</div>
+				<a href="#" class="prev"><img src="../bootstrap/img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+				<a href="#" class="next"><img src="../bootstrap/img/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+			</div>
+			
+		</div>
+   </div></div>
+<!-- modal-gallery is the modal dialog used for the image gallery -->
+<div class='container page'>
+<script>
+  function jsonFlickrApi(rsp) {
+    window.rsp = rsp;
+    var s = "";
+    // http://farm{id}.static.flickr.com/{server-id}/{id}_{secret}_[mstb].jpg
+    // http://www.flickr.com/photos/{user-id}/{photo-id}
+    s = "total number is: " + rsp.photos.photo.length + "<br/>";
+    
+    for (var i=0; i < rsp.photos.photo.length; i++) {
+      photo = rsp.photos.photo[i];
+      t_url = "http://farm" + photo.farm + ".static.flickr.com/" + 
+        photo.server + "/" + photo.id + "_" + photo.secret + "_" + "t.jpg";
+      p_url = "http://www.flickr.com/photos/" + photo.owner + "/" + photo.id;
+      s +=  '<a href="' + p_url + '">' + '<img alt="'+ photo.title + 
+        '"src="' + t_url + '"'+" class='pic' "+'/>' + '</a>';
+    }
+    document.writeln(s);
+  }
+  </script>
+  <script src=" http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=ba12e9d62ea20cf4a6c6aab4baa0c2f1&user_id=92978576%40N08&format=json&per_page=50"></script>
+</div>
+ 
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../bootstrap/js/load-image.min.js"></script>
+<script src="../bootstrap/js/bootstrap-image-gallery.min.js"></script>
+<script src="../bootstrap/js/main.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
+	<script src="../bootstrap/js/slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: '../bootstrap/img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true
+			});
+		});
+	</script>
+	
+</body> 
+</html>
